@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For My Love ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,13 +12,25 @@
         <div class="header-content">
             <h1>Ramisha</h1>
             <p class="subtitle">The One Who Stole My Heart ❤️</p>
+            <div class="music-player">
+                <button id="playPause">🎵 Play Music</button>
+                <audio id="bgMusic" loop>
+                    <source src="music/romance.mp3" type="audio/mp3">
+                </audio>
+            </div>
         </div>
+        <div id="hearts-container"></div>
     </header>
 
     <section class="main-content">
         <div class="love-note">
             <h2>My Dearest</h2>
-            <p>Every moment with you is a gift I cherish deeply.</p>
+            <p class="typewriter-text">Every moment with you is a gift I cherish deeply.</p>
+            <div class="interactive-message">
+                <h3>Write a Love Note</h3>
+                <textarea id="loveMessage" placeholder="Write your message here..."></textarea>
+                <button id="sendLove">Send Love 💌</button>
+            </div>
         </div>
 
         <div class="memories">
